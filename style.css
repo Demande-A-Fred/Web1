@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    background-image: url(https://cdn.pixabay.com/photo/2022/01/30/23/57/abstract-6982524_960_720.jpg);
+    background-position: center;
+    background-repeat: space;
+    background-size: cover;
+    height: 15%;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    background-color: rgb(150, 150, 150);
+    height: 4%;
+}
+
+footer {
+    text-align: center;
+    height: 10%;
+    background-color: rgb(150, 150, 150);
+    padding-top: 5%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    /* Alignements des liens dans le menu */
+    list-style-type: none;
+    margin: 0px;
+    padding: 0;
+}
+
+.sous_menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    min-width: 100px;
+    margin: 0.5rem;
+    /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0.2rem;
+    /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;
+    background-color: #383838;
+    /* Couleur d'arrière-plan */
+    color: #fff;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Suppression du soulignement */
+    border: 1px solid #fff;
+    /* Ajout d'une bordure */
+    border-radius: 4px;
+    /* Arrondis des bordures */
+}
+
+.sous_menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.sous_menu a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
+
+.bouton_menu {
+    display: block;
+    min-width: 100px;
+    margin: 0.5rem;
+    /* Marges externes (1 valeurs = 4 directions) */
+    padding: 0.4rem 0.2rem;
+    /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
+    text-align: center;
+    background-color: #383838;
+    /* Couleur d'arrière-plan */
+    color: #fff;
+    /* Couleur du texte */
+    text-decoration: none;
+    /* Suppression du soulignement */
+    border: 1px solid #fff;
+    /* Ajout d'une bordure */
+    border-radius: 4px;
+    /* Arrondis des bordures */
+}
+
+.bouton_menu:hover {
+    background-color: #fff;
+    color: #383838;
+    ;
+    border-color: #383838;
+    ;
+}
+
+nav li:hover .sous_menu {
+    display: flex;
+}
+
+.section_accueil {
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    height: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /***********/
+    flex-wrap: wrap;
+    display: block;
+}
+
+@keyframes display {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    10% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    30% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.article_accueil {
+    background-color: rgb(150, 150, 150);
+    width: 30%;
+    /**************/
+    position: absolute;
+    left: 35%;
+    top: 40%;
+    opacity: 0;
+    animation: display 10s infinite;
+}
+
+.article_accueil:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.article_accueil:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.article_accueil:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.article_accueil:nth-child(5) {
+    animation-delay: 8s;
+}
+
+.article_accueil img {
+    width: 100%;
+}
+
+.section_article {
+    display: block;
+    height: 100%;
+}
+
+.article_page {
+    max-width: 100%;
+    background-color: rgb(200, 200, 200);
+    padding: 1%;
+}
+
+.article_page h1 {
+    font-weight: 700;
+    font-size: 20pt;
+}
+
+.article_page h2 {
+    font-weight: 500;
+    font-size: 16pt;
+}
+
+.article_page img {
+    width: 50%;
+}
+
+.article_image_entete {
+    display: flex;
+    justify-content: center;
+}
