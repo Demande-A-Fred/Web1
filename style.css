@@ -32,7 +32,6 @@ footer {
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    /* Alignements des liens dans le menu */
     list-style-type: none;
     margin: 0px;
     padding: 0;
@@ -49,20 +48,13 @@ nav ul li {
     list-style-type: none;
     min-width: 100px;
     margin: 0.5rem;
-    /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.4rem 0.2rem;
-    /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;
     background-color: #383838;
-    /* Couleur d'arrière-plan */
     color: #fff;
-    /* Couleur du texte */
     text-decoration: none;
-    /* Suppression du soulignement */
     border: 1px solid #fff;
-    /* Ajout d'une bordure */
     border-radius: 4px;
-    /* Arrondis des bordures */
 }
 
 .sous_menu a {
@@ -80,20 +72,13 @@ nav ul li {
     display: block;
     min-width: 100px;
     margin: 0.5rem;
-    /* Marges externes (1 valeurs = 4 directions) */
     padding: 0.4rem 0.2rem;
-    /* Marges internes (2 valeurs = haut/bas et gauche/droite)*/
     text-align: center;
     background-color: #383838;
-    /* Couleur d'arrière-plan */
     color: #fff;
-    /* Couleur du texte */
     text-decoration: none;
-    /* Suppression du soulignement */
     border: 1px solid #fff;
-    /* Ajout d'une bordure */
     border-radius: 4px;
-    /* Arrondis des bordures */
 }
 
 .bouton_menu:hover {
